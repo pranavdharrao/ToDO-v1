@@ -24,7 +24,6 @@ const itemsSchema = {
 
 const Item = mongoose.model("Item", itemsSchema);
 
-
 const item1 = new Item({
   name: "Welcome to your todolist!"
 });
@@ -88,8 +87,6 @@ app.get("/:customListName", function(req, res){
     }
   });
 
-
-
 });
 
 app.post("/", function(req, res){
@@ -132,7 +129,6 @@ app.post("/delete", function(req, res){
     });
   }
 
-
 });
 
 app.get("/about", function(req, res){
@@ -142,6 +138,3 @@ app.get("/about", function(req, res){
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
-
-
-//mongodb+srv://pranavdharrao:aofojOFD7gE2qbQa@cluster0.waesbqx.mongodb.net/?retryWrites=true&w=majority"

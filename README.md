@@ -41,8 +41,23 @@ To get started with this project, follow these steps:
    ```env
    MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>
    ```
+   
+### Local MongoDB Connection
 
-4. Start the application:
+To connect to MongoDB locally using MongoDB Compass, follow these steps:
+
+1. Start the MongoDB service using the following command:
+
+   ```bash
+   sudo systemctl start mongod
+   ```
+
+2. Set your MongoDB connection URL as follows:
+   ```env
+   MONGODB_URI= mongodb://localhost:27017/todov1?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
+   ```
+
+3. Start the application:
 
    ```bash
    npm start
@@ -59,10 +74,6 @@ To get started with this project, follow these steps:
 ## Contributing
 
 Feel free to contribute to this project by creating issues or submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
